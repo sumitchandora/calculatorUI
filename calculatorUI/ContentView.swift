@@ -36,11 +36,11 @@ enum AllElements: String {
     var buttonColor: Color {
         switch self {
             case .allClear, .negativePositive, .percent:
-            return Color(.lightGray)
+            return Color(red: 0.65, green: 0.65, blue: 0.65)
         case .divide, .multiply, .minus, .plus, .equal:
-            return Color(.orange)
+            return Color(red: 1, green: 0.62, blue: 0.04)
         default:
-            return Color(.darkGray)
+            return Color(red: 0.2, green: 0.2, blue: 0.2)
         }
     }
     var buttonSize: CGFloat {
@@ -267,7 +267,5 @@ struct ContentView_Previews: PreviewProvider {
 
 
 
-func checking() {
-    
-}
+
 
